@@ -1,0 +1,46 @@
+<!-- =========================== -->
+<!-- Stephen Calabro -->
+<!-- sac357@drexel.edu -->
+<!-- CS338:GUI, Assignment 2 -->
+<!-- =========================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drexel CS338 Assignment 2 - Stephen Calabro</title>
+
+  <!-- Meta-information about the page for browsers -->
+  <meta charset="utf-8">
+
+  <!-- Link to stylesheet.  The browser will load this and use when showing the HTML page. -->
+  <link rel="stylesheet" type="text/css" href="ToDoList.css">
+</head>
+<body>
+
+  <!-- HTML that is static, never changes, and served directly to the browser.  This will appear right away, even before the JavaScript program starts running. -->
+
+  <nav class="navbar" role="navigation">
+    <h1 class="navbar-text">Drexel CS338 - Assignment 2 - Stephen Calabro</h1>
+  </nav>
+
+
+  <!-- This is where the "New Task" button should go -->
+  <div class="newtask">
+    Add a task: 
+
+    <!-- Create text field for entering to do item-->
+    <input type="text" name="task">
+
+    <!-- Create button for adding task (we will add functionality now, too) -->
+    <input type="button" onclick="AddTask()" value="Add Task">
+
+    <br/>
+    <br/>
+  <div class="container" id="container">
+  <!-- This is empty to start.  Our JavaScript program will run and put HTML elements inside of here, and control what HTML is shown on this part of the page. -->
+  </div>
+
+  <!-- This is the main entry point for the JavaScript program.  When the browser gets here, it will fetch the programs and then start running it. -->
+  <script type="text/javascript" src="ToDoList.js"></script>
+
+</body>
+</html>

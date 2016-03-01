@@ -1,0 +1,67 @@
+<!-- =========================== -->
+<!-- Stephen Calabro -->
+<!-- sac357@drexel.edu -->
+<!-- CS338:GUI, Assignment 2 -->
+<!-- =========================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drexel CS338 Assignment 2 - Stephen Calabro</title>
+  <!-- Meta-information about the page for browsers -->
+  <meta charset="utf-8">
+
+  <!-- Add link to stylesheet here.  The browser will load this and use when showing the HTML page. -->
+  <link rel="stylesheet" type="text/css" href="ToDoList.css">
+</head>
+<body>
+
+	<!-- HTML that is static, never changes, and served directly to the browser.  This will appear right away, even before the JavaScript program starts running. -->
+  
+  <nav class="navbar" role="navigation">
+    <h1 class="navbar-text">Drexel CS338 - Assignment 2 - Stephen Calabro</h1>
+  </nav>
+
+  <!-- This is where the "New Task" button should go -->
+  <div class="newtask">
+    Add a task: 
+
+    <!-- Create text field for entering to do item-->
+    <input type="text" name="task">
+
+    <!-- Create button for later adding task (not functional yet) -->
+    <input type="button" onclick="alert('Hello World!')" value="Add Task">
+  </div>
+
+  <div class="container" id="container">
+    <!-- This section static HTML right now, creating a to do list. 
+    In next part, the JavaScript program will run and put HTML elements 
+    inside of here, and control what HTML is shown on this 
+    part of the page. For now, this is here so that you can set up the 
+    CSS style and see what it should look like.-->
+
+    <input class="todoItem" type="checkbox">
+    <label for="todoItem">Study for finals</label>
+    <br>
+
+    <input class="todoItem" type="checkbox">
+    <label for="todoItem">Apply for coops</label>
+    <br>
+
+    <input class="todoItem" type="checkbox">
+    <label for="todoItem">Work on class project</label>
+    <br>
+
+    <input class="todoItem" type="checkbox">
+    <label for="todoItem">Register for classes</label>
+    <br>
+
+    <input class="todoItem" type="checkbox">
+    <label for="todoItem">Buy milk</label>
+    <br>
+
+    <input class="todoItem" type="checkbox">
+    <label for="todoItem">Pack for spring break</label>
+    <br>
+  </div>
+</body>
+</html>

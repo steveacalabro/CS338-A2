@@ -1,0 +1,54 @@
+/**
+ * Stephen Calabro
+ * sac357@drexel.edu
+ * CS338:GUI, Assignment 2
+ */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+
+.navbar {
+    height: 50px;
+    background-color: #003875;
+    margin-bottom: 15px;
+}
+
+.navbar > .navbar-text {
+  	margin-top: 0px;
+    font-size: 18px;
+    margin-left: 10px;
+    color: #ffd65a;
+    line-height: 50px;
+}
+
+.newtask {
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+
+.title {
+  
+}
+
+.container {
+  
+}
+
+.todoItem {
+	margin: 15px;
+}
+
+
+label {
+	font-size: 18px;
+}
+
+.todoItem:checked + label {
+	font-weight: bold;
+	font-style: italic;
+	color: green;
+	text-decoration: line-through;
+}
